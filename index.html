@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="JasonPlayer 映匣官方支持：在 iPhone 和 iPad 播放本地视频，连接电脑与 NAS 的局域网共享。"><title>JasonPlayer 映匣 · 技术支持</title><link rel="stylesheet" href="style.css"></head>
+<body><header><a class="brand" href="./"><img src="icon.png" alt="">JasonPlayer 映匣</a><nav aria-label="导航"><a href="./" aria-current="page">技术支持</a><a href="privacy.html">隐私政策</a></nav></header>
+<main><p class="eyebrow">IPHONE & IPAD · LOCAL & LAN</p><h1>自己的视频，随时放映。</h1><p class="intro">从“文件”导入，或连接同一局域网里的电脑和 NAS。这里是 JasonPlayer 映匣的使用指南与支持入口。</p>
+<section class="card"><h2>联系开发者</h2><p>使用问题、建议或隐私请求，请发送邮件：</p><a class="button" href="mailto:2606200555@qq.com">2606200555@qq.com</a><p class="meta">开发者：Zhan Luowen。请注明设备型号、iOS/iPadOS 版本、App 版本和复现步骤。反馈不需要提供共享密码或视频文件。</p></section>
+<h2>开始本地播放</h2><ol class="steps"><li>打开“片库”，点击“导入”，在系统“文件”中选择视频。</li><li>点击视频开始播放。也可通过 USB 文件共享，将文件放入 App 的文档目录，再回到片库下拉刷新。</li><li>轻点画面显示控制栏；双击播放或暂停；长按临时切换 3 倍速；横向滑动调整进度。</li><li>打开播放器右上角设置，选择倍速、音轨与视频中包含的字幕。在 App 设置中可调整字幕显示。</li></ol>
+<h2>连接 Windows 共享文件夹</h2><ol class="steps"><li>让电脑和 iPhone/iPad 连接同一个可互通的局域网。将 Windows 网络配置设为“专用网络”。</li><li>打开视频文件夹的“属性 → 共享 → 高级共享”，启用共享，并给使用的账号读取权限；“安全”选项卡也需允许读取。</li><li>在电脑运行 <code>ipconfig</code>，记下当前网卡的 IPv4 地址和文件夹共享名称。</li><li>在 App“局域网”中添加连接：填写主机地址、共享名称、用户名及密码，端口通常为 <code>445</code>。填写账号密码，不是 Windows 解锁 PIN。</li><li>允许系统的“局域网”访问请求，测试连接并保存，进入共享目录后点击视频。</li></ol>
+<h2>连接 Mac 或 NAS</h2><p>Mac：在“系统设置 → 通用 → 共享 → 文件共享”中启用 SMB，并授权账号读取目录。NAS：开启 SMB2/SMB3 文件服务，使用 NAS 地址、共享名称和具有读取权限的账号连接。</p>
+<h2>常见问题</h2><h3>发现不到电脑，或连接失败</h3><p>可直接填写 IP 地址；自动发现不到设备不代表不能连接。确认电脑没有休眠，设备未连接隔离的访客 Wi-Fi，Windows 防火墙允许专用网络的“文件和打印机共享”，以及 iOS 设置已允许 App 访问局域网。</p><h3>视频没有声音或字幕</h3><p>检查播放器中的音轨、内嵌字幕选项和设备音量。App 只能选择视频文件实际包含的轨道。常见封装包括 MP4、MKV、MOV 和 AVI；能否播放还取决于视频编码和设备性能。不支持 DRM 加密片源。</p><h3>离线观看、后台与设备同步</h3><p>可将共享视频保存到设备。下载时请保持 App 在前台；切换到后台会暂停播放。iPhone 和 iPad 的片库不会自动同步。</p><h3>删除数据</h3><p>长按本地视频可删除文件；在设置中清除播放记录；在局域网页面移除连接会同时删除该连接保存的密码。移除连接不会删除电脑上的视频。</p>
+<p class="meta">App 不提供影视内容。请播放你有权访问和使用的文件。开源组件及许可可在 App“设置 → 关于与隐私 → 开源组件与许可”中查看。</p></main>
+<footer><span>© 2026 Zhan Luowen</span><a href="privacy.html">隐私政策</a></footer></body></html>
